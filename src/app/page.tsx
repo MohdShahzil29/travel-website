@@ -17,7 +17,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import Image from "next/image";
+// import Image from "next/image";
 
 const App: React.FC = () => {
   const [form] = Form.useForm();
@@ -724,7 +724,7 @@ const App: React.FC = () => {
               <h3 className="text-xl font-bold mb-6">WanderLuxe</h3>
               <p className="text-gray-400 mb-6">
                 Creating unforgettable travel experiences since 2010. We
-                specialize in crafting personalized journeys to the world's most
+                specialize in crafting personalized journeys to the world most
                 extraordinary destinations.
               </p>
               <div className="flex space-x-4">
