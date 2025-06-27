@@ -1,5 +1,5 @@
 // The exported code uses Tailwind CSS. Install Tailwind CSS in your dev environment to ensure all styles work.
-"use client"
+"use client";
 
 import React, { useState } from "react";
 import { Button, Input, Rate, Checkbox, Form, Carousel } from "antd";
@@ -10,17 +10,14 @@ import {
   TeamOutlined,
   ArrowRightOutlined,
   CheckOutlined,
-  PhoneOutlined,
-  MailOutlined,
-  GlobalOutlined,
-  LockOutlined,
 } from "@ant-design/icons";
-import * as echarts from "echarts";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+
+import Image from "next/image";
 
 const App: React.FC = () => {
   const [form] = Form.useForm();
@@ -415,6 +412,13 @@ const App: React.FC = () => {
                     alt={destination.name}
                     className="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-110"
                   />
+                  {/* <Image
+                    src={destination.image}
+                    alt={destination.name}
+                    width={600} // You need to specify the width
+                    height={400} // You need to specify the height
+                    className="object-cover object-top transition-transform duration-500 hover:scale-110"
+                  /> */}
                 </div>
                 <div className="p-6">
                   <div className="flex justify-between items-start mb-2">
